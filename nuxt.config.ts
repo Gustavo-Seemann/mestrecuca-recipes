@@ -3,8 +3,21 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss", 
+    "@nuxt/image-edge", 
+    "@nuxt/image",
+    "@nuxtjs/google-fonts",
+    "nuxt-icon",
   ],
+
+  googleFonts: {
+    families: {
+      "Ingrid Darling": true,
+      "Inria Serif": true,
+    }
+  },
+
+
   tailwindcss: {
     config: {
       theme: {
