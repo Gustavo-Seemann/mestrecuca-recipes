@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-secondary items-center flex flex-col justify-center">
+  <header class="top-0 z-50 bg-secondary items-center flex flex-col justify-center">
     <div class="w-full flex items-center justify-center border-b border-solid border-black">
         <div class="container max-w-[900px]">
             <div class="flex items-center justify-center">
