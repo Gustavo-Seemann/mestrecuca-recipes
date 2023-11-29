@@ -20,7 +20,7 @@ import bannerChefVideo from "@/assets/bannerChefVideo.mp4"
   </div>
 </template>
 
-<style>
+<style scoped>
 .video-container {
   position: relative;
 }
