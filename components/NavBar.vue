@@ -1,5 +1,4 @@
 <script setup>
-  import logo from "@/assets/logo.png";
 </script>
 
 <template>
@@ -27,15 +26,15 @@
     <div class="w-full flex items-center justify-center p-5 border-b border-solid border-black shadow-md">
         <div class="container max-w-[900px]">
             <div class="flex items-center justify-between">
-                <NuxtLink class="text-sm" to="/">Beef</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Chicken</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Dessert</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Lamb</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Miscellaneous</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Pasta</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Pork</NuxtLink>
-                <NuxtLink class="text-sm" to="/">Seafood</NuxtLink>
-                <NuxtLink class="text-sm" to="/">All categories</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Beef</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Chicken</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Dessert</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Lamb</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Miscellaneous</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Pasta</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Pork</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">Seafood</NuxtLink>
+                <NuxtLink class="text-md font-bold" to="/">All categories</NuxtLink>
             </div>
         </div>
     </div>
