@@ -10,7 +10,5 @@ export default async (category) => {
         });
     }
 
-    console.log(data.value)
-
     return data.value.meals;
 }
