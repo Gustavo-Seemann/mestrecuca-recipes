@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Inria Serif';
+  background-color: #FFEFDC;
 }
 
 </style>
