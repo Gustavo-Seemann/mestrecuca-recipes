@@ -20,7 +20,7 @@ useHead({
         </div>
         <div class="container flex flex-wrap items-center justify-center mt-5">
             <div v-for="recipe in recipes">
-                <RecipesPreview :recipe="recipe" />
+                <RecipesPreview @click="navigateTo(`/recipe/${recipe.idMeal}`)" :recipe="recipe" />
             </div>
         </div>
     </div>
