@@ -8,5 +8,13 @@ export default async (id) => {
         });
     }
 
+    if (!data.value.meals) {
+        throw createError({
+            statusCode: "404",
+            message: "Unable to find recipe"
+        });
+    }
+
+
     return data?.value.meals[0];
 }

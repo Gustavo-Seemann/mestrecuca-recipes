@@ -19,7 +19,7 @@ const pauseVideo = (video) => {
 <template>
     <div class="container max-w-[1000px] max-h-[600px]">
         <div class="flex items-center justify-center relative">
-            <div @mouseover="playVideo('beefVideo')" @mouseleave="pauseVideo('beefVideo')" class="beef-container h-full relative rounded-l-3xl overflow-hidden">
+            <div  @click="navigateTo(`/categories/Beef`)" @mouseover="playVideo('beefVideo')" @mouseleave="pauseVideo('beefVideo')" class="beef-container h-full relative rounded-l-3xl overflow-hidden">
                 <video id="beefVideo" :src="beefVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">
@@ -30,7 +30,7 @@ const pauseVideo = (video) => {
                     <Icon name="material-symbols:arrow-right-alt" color="white" size="50" />
                 </div>
             </div>
-            <div @mouseover="playVideo('dessertVideo')" @mouseleave="pauseVideo('dessertVideo')" class="dessert-container h-full relative">
+            <div @click="navigateTo(`/categories/Dessert`)" @mouseover="playVideo('dessertVideo')" @mouseleave="pauseVideo('dessertVideo')" class="dessert-container h-full relative">
                 <video id="dessertVideo" :src="dessertVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">
@@ -42,7 +42,7 @@ const pauseVideo = (video) => {
 
                 </div>
             </div>
-            <div @mouseover="playVideo('pastaVideo')" @mouseleave="pauseVideo('pastaVideo')" class="pasta-container h-full rounded-r-3xl overflow-hidden relative">
+            <div  @click="navigateTo(`/categories/Pasta`)" @mouseover="playVideo('pastaVideo')" @mouseleave="pauseVideo('pastaVideo')" class="pasta-container h-full rounded-r-3xl overflow-hidden relative">
                 <video id="pastaVideo" :src="pastaVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">

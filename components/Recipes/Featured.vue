@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="flex justify-center pb-10">
+    <div @click="navigateTo(`/recipe/${recipe?.meals[0].idMeal}`)" class="flex justify-center pb-10">
         <div class="meal-card bg-white p-4 mx-5 rounded-3xl shadow-lg">
             <div class="relative photo-container rounded-2xl overflow-hidden">
                 <NuxtImg v-if="recipe" :src="recipe?.meals[0].strMealThumb" class="photo max-w-[270px]" />

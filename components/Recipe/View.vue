@@ -52,7 +52,6 @@ const getFlag = (area) => {
     let url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/2560px-Flag_of_the_United_Nations.svg.png'
 
     if (flag) {
-        console.log('entrei no flag')
         url = `https://www.themealdb.com/images/icons/flags/big/64/${flag}.png`
     }
 
@@ -87,7 +86,7 @@ const getYouTubeEmbedLink = (youtubeLink) => {
         <h2 class="text-2xl font-bold text-primary mt-7 mb-3">Instructions</h2>
         <p class="text-lg"> {{ recipe.strInstructions }} </p>
       </div>
-      <div class="flex justify-between items-center mb-10">
+      <div class="flex justify-between mb-10">
         <div>
           <h2 class="text-2xl font-bold text-primary mt-7 mb-3">Ingredients</h2>
           <div v-for="i in 20" :key="i" class="text-lg">
