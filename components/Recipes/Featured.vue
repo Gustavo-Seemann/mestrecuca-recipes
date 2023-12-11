@@ -12,12 +12,12 @@ onMounted(() => {
 
 <template>
     <div @click="navigateTo(`/recipe/${recipe?.meals[0].idMeal}`)" class="flex justify-center pb-10">
-        <div class="meal-card bg-white p-4 mx-5 rounded-3xl shadow-lg">
+        <div class="meal-card bg-white p-4 md:p-3 lg:p-4 mx-5 rounded-3xl shadow-lg">
             <div class="relative photo-container rounded-2xl overflow-hidden">
-                <NuxtImg v-if="recipe" :src="recipe?.meals[0].strMealThumb" class="photo max-w-[270px]" />
+                <NuxtImg v-if="recipe" :src="recipe?.meals[0].strMealThumb" class="photo max-w-[260px] md:max-w-[180px] lg:max-w-[270px]" />
                 <div class="overlay"></div>
                 <div class="text-container flex justify-center items-center mb-7">
-                    <h1 class="text-xl text-center">{{ recipe?.meals[0].strMeal || 'Meal' }}</h1>
+                    <h1 class="text-xl md:text-lg lg:text-xl text-center">{{ recipe?.meals[0].strMeal || 'Meal' }}</h1>
                 </div>
             </div>
         </div>
