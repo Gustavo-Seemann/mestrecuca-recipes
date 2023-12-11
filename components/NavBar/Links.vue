@@ -1,4 +1,8 @@
 <script setup>
+    const props = defineProps({
+    isMobileStyle: Boolean,
+    });
+
     const categories = ["Beef", "Chicken", "Dessert", "Lamb", "Miscellaneous", "Pasta", "Pork", "Seafood"]
 
     const underlineEffect = `
@@ -28,7 +32,7 @@
 </script>
 
 <template>
-    <div class="flex items-center text-md font-bold justify-between">
+    <div :class="`${ isMobileStyle ? 'flex-col': 'justify-between items-center'} flex text-md font-bold`">
         <NuxtLink :class="`${linkEffect} ${underlineEffect}`" to="/">Home</NuxtLink>
         <NuxtLink v-for="category in categories" :key="category" :to="`/categories/${category}`" :class="`${linkEffect} ${underlineEffect}`">
             {{ category }}
