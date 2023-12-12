@@ -69,7 +69,7 @@ const getYouTubeEmbedLink = (youtubeLink) => {
 <template>
   <div class="flex flex-col items-center justify-center py-10">
     <div class="container max-w-[1000px]">
-        <div class="flex justify-between items-center mb-3">
+        <div class="max-md:px-3 flex justify-between items-center mb-3">
             <div class="max-w-[70%] break-words">
                 <h1 class="text-4xl font-bold text-primary"> {{ recipe.strMeal }} </h1>
             </div>
@@ -82,11 +82,11 @@ const getYouTubeEmbedLink = (youtubeLink) => {
           frameborder="0"
           allowfullscreen
         ></iframe>
-      <div>
+      <div class="max-md:px-3">
         <h2 class="text-2xl font-bold text-primary mt-7 mb-3">Instructions</h2>
         <p class="text-lg"> {{ recipe.strInstructions }} </p>
       </div>
-      <div class="flex justify-between mb-10">
+      <div class="max-md:flex-col max-md:px-3 flex justify-between mb-10">
         <div>
           <h2 class="text-2xl font-bold text-primary mt-7 mb-3">Ingredients</h2>
           <div v-for="i in 20" :key="i" class="text-lg">

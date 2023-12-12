@@ -2,9 +2,10 @@
     <div class="container flex items-center">
         <div class="prevButton hover:cursor-pointer" @click="prevSlide"><Icon name="material-symbols:arrow-left-alt" color="#5B0000" size="50" /></div>
       <Swiper
+        v-if="isClient"
         class="flex items-center justify-center"
         id="mySlider"
-        :slides-per-view="5"
+        :slides-per-view="isMobile? 1 : 5"
         :navigation="{ nextEl: '.nextButton', prevEl: '.prevButton' }"
         :modules="modules"
       >
@@ -32,6 +33,18 @@
   
   const categories = await useFetchCategories();
   const modules = ref([Navigation]);
+
+  const isMobile = computed(() => {
+    if (window) {
+      return window?.innerWidth < 640
+    }
+    return false
+  });
+  const isClient = ref(false);
+
+  onMounted(() => {
+    isClient.value = true;
+  });
   </script>
   
   <style scoped>

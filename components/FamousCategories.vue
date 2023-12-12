@@ -17,10 +17,10 @@ const pauseVideo = (video) => {
 </script>
 
 <template>
-    <div class="container max-w-[1000px] max-h-[600px]">
-        <div class="flex items-center justify-center relative">
-            <div  @click="navigateTo(`/categories/Beef`)" @mouseover="playVideo('beefVideo')" @mouseleave="pauseVideo('beefVideo')" class="beef-container h-full relative rounded-l-3xl overflow-hidden">
-                <video id="beefVideo" :src="beefVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
+    <div class="container md:max-w-[1000px] md:max-h-[600px]">
+        <div class="md:flex items-center justify-center relative">
+            <div  @click="navigateTo(`/categories/Beef`)" @touchstart="playVideo('beefVideo')" @touchend="pauseVideo('beefVideo')" @mouseover="playVideo('beefVideo')" @mouseleave="pauseVideo('beefVideo')" class="beef-container h-full relative lg:rounded-l-3xl overflow-hidden">
+                <video id="beefVideo" :src="beefVideo" class="pointer-events-none w-full max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">
                     <div>
@@ -30,8 +30,8 @@ const pauseVideo = (video) => {
                     <Icon name="material-symbols:arrow-right-alt" color="white" size="50" />
                 </div>
             </div>
-            <div @click="navigateTo(`/categories/Dessert`)" @mouseover="playVideo('dessertVideo')" @mouseleave="pauseVideo('dessertVideo')" class="dessert-container h-full relative">
-                <video id="dessertVideo" :src="dessertVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
+            <div @click="navigateTo(`/categories/Dessert`)" @touchstart="playVideo('dessertVideo')" @touchend="pauseVideo('dessertVideo')" @mouseover="playVideo('dessertVideo')" @mouseleave="pauseVideo('dessertVideo')" class="dessert-container h-full relative">
+                <video id="dessertVideo" :src="dessertVideo" class="pointer-events-none w-full max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">
                     <div>
@@ -42,8 +42,8 @@ const pauseVideo = (video) => {
 
                 </div>
             </div>
-            <div  @click="navigateTo(`/categories/Pasta`)" @mouseover="playVideo('pastaVideo')" @mouseleave="pauseVideo('pastaVideo')" class="pasta-container h-full rounded-r-3xl overflow-hidden relative">
-                <video id="pastaVideo" :src="pastaVideo" class="max-h-[700px]" muted loop style="object-fit: cover;"/>
+            <div  @click="navigateTo(`/categories/Pasta`)" @touchstart="playVideo('pastaVideo')" @touchend="pauseVideo('pastaVideo')" @mouseover="playVideo('pastaVideo')" @mouseleave="pauseVideo('pastaVideo')" class="pasta-container h-full lg:rounded-r-3xl overflow-hidden relative">
+                <video id="pastaVideo" :src="pastaVideo" class="pointer-events-none w-full max-h-[700px]" muted loop style="object-fit: cover;"/>
                 <div class="overlay"></div>
                 <div class="text-container p-7 flex items-center justify-between">
                     <div>

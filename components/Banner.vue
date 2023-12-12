@@ -3,17 +3,17 @@ import bannerChefVideo from "@/assets/bannerChefVideo.mp4"
 </script>
 
 <template>
-  <div class="banner flex items-center justify-center py-10">
+  <div class="banner flex items-center justify-center max-md:pb-10 md:py-10">
     <div class="container max-w-[1000px]">
-      <div class="video-container relative overflow-hidden rounded-3xl">
-        <video class="w-full h-full rounded-3xl" :src="bannerChefVideo" autoplay loop muted />
+      <div class="video-container h-[700px] md:h-full relative overflow-hidden lg:rounded-3xl">
+        <video class="w-full h-full lg:rounded-3xl" :src="bannerChefVideo" autoplay loop muted style="object-fit: cover;" />
         <div class="overlay"></div>
-        <div  @click="navigateTo('/categories/all')" class="text-container group hover:cursor-pointer flex justify-between p-10 items-center">
+        <div  @click="navigateTo('/categories/all')" class="text-container group hover:cursor-pointer flex justify-between max-md:p-3 max-md:pb-10 md:p-10 items-center">
             <div>                
-                <h1 class="text-5xl font-bold text-white">Cook like a Mestre-cuca</h1>
-                <p class="text-3xl text-white font-light">Learn our best recipes.</p>
+                <h1 class="max-md:text-4xl text-5xl font-bold text-white">Cook like a Mestre-cuca</h1>
+                <p class="max-md:text-2xl text-3xl text-white font-light">Learn our best recipes.</p>
             </div>
-            <Icon name="material-symbols:arrow-right-alt" color="white" class="mt-4 group-hover:animate-bounce" size="50" />
+            <Icon name="material-symbols:arrow-right-alt" color="white" class="max-md:ml-3 mt-4 group-hover:animate-bounce" size="50" />
         </div>
       </div>
     </div>
