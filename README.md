@@ -11,8 +11,12 @@ I used Nuxt 3 and TailwindCSS for the Front-end, integrating with the FreeMealAP
 
 The idea of the website is to be a recipe blog from a brand known as MestreCuca, allowing you to discover and see recipes for food from different types and countries.
 
+## 🔎 Website Preview
 
-## 💻 Setup
+![ezgif-7-77ba4e6b96](https://github.com/Gustavo-Seemann/mestrecuca-recipes/assets/101838119/6bd22120-f66a-4ca9-a846-927ec969093c)
+
+
+# 💻 Setup
 
 Make sure to install the dependencies:
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
