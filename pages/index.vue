@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'MestreCuca Recipes',
+});
+</script>
+
 <template>
     <div class="flex flex-col items-center justify-center">
         <Banner />
