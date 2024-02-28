@@ -1,10 +1,21 @@
-# Nuxt 3 Minimal Starter
+![image](https://github.com/Gustavo-Seemann/mestrecuca-recipes/assets/101838119/79d99c06-0410-4265-883c-31e2c3c58e9a)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+# 🥐 MestreCuca Recipes
+
+MestreCuca Recipes is a personal project prototyped and developed by me (Luiz Gustavo Seemann) in Nuxt.js.
+
+
+I used Nuxt 3 and TailwindCSS for the Front-end, integrating with the FreeMealAPI.
+
+
+The idea of the website is to be a recipe blog from a brand known as MestreCuca, allowing you to discover and see recipes for food from different types and countries.
+
+
+## 💻 Setup
 
 Make sure to install the dependencies:
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ```bash
 # npm
